@@ -1,0 +1,95 @@
+/* MAIN */
+main{
+    margin: 20px;
+    border-radius: 10px;
+    background-color: var(--background-header);
+    color: whitesmoke;
+}
+/* CONTENT PAGE */
+.content-page{
+    background-color: var(--background-header);
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr;
+    gap: 20px;
+    text-align: justify;
+}
+/* TITOLO PAGINA */
+.titolo{
+    margin: 10px 0;
+    padding: 5px 0;
+    font-size: 40px;
+    color: whitesmoke;
+}
+/* LOCANDINA */
+.locandina-container{
+    background-color: var(--background-header);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.locandina-container img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 8px;
+}
+/* INFO FILM */
+.dettagli-container{
+    border-right: 1px solid var(--navbar-color);
+    padding-right: 15px;
+}
+/* AGGIUNGI PREFERITI */
+.btn-aggiungi-preferiti{
+    padding: 5px;
+    background-color: var(--keyword-color);
+    color: var(--background-header);
+    font-weight: bold;
+    cursor: pointer;
+}
+/* PROGRAMMAZIONE FILM */
+.programmazione-film h3{
+    margin: 20px 0;
+    padding: 10px 5px;
+}
+.data-film{
+    padding: 0 5px;
+    color: whitesmoke;
+    font-size: 14px;
+}
+.sale-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 0 5px;
+}
+/* PRENOTAZIONE POSTO */
+.prenotazione-button{
+    background-color: var(--keyword-color);
+    color: var(--background-header);
+    font-weight: bold;
+    font-size: 14px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+.prenotazione-button:hover{
+    background-color: var(--navbar-color);
+    color: whitesmoke;
+}
+.film-non-trovato{
+    padding: 10px;
+}
+/* RESPONSIVE DESIGN PER SCHERMI PIU' PICCOLI */
+@media screen and (max-width: 800px) {
+    .content-page {
+        grid-template-columns: 1fr; 
+    }
+    .locandina-container img {
+        max-width: 90%; 
+    }
+}

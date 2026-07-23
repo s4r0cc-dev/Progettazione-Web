@@ -1,0 +1,79 @@
+/* ROOT DEL SITO */
+:root{
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --navbar-color: rgba(116, 116, 116, 0.795);
+    --background-header: rgb(14, 14, 14);
+    --keyword-color: #ffcc00;
+}
+/* BODY */
+body{
+    margin: 0;
+    user-select: none;
+    font-family: var(--font);
+}
+/* PROPRIETA' DESIGN CONDIVISE */
+strong {
+    color: var(--keyword-color);
+}
+.titolo{
+    margin: 10px 20px;
+    padding: 5px;
+    font-size: 40px;
+}
+/* MODALE DEI MESSAGGI */
+.modal-overlay{
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--keyword-color);
+    border: 2px solid var(--background-header);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--background-header);
+    z-index: 9999;
+    font-weight: bold;
+}
+.modal-msg{
+    padding: 20px;
+    font-weight: bold;
+}
+.modal-button-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+/* BOTTONI */
+.btn-modal-cancel,
+.btn-modal-confirm,
+.btn-modal-elimina{
+    padding: 5px;
+    background-color: var(--background-header);
+    color: whitesmoke;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+.btn-modal-cancel:hover,
+#btn-normal:hover{
+    background-color: var(--navbar-color);
+    color: var(--background-header);
+}
+.btn-modal-confirm:hover,
+.btn-modal-elimina:hover{
+    background-color: red;
+    color: whitesmoke;
+}
+.btn-modal-normal{
+    padding: 5px;
+    background-color: var(--keyword-color);
+    color: var(--background-header);
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}

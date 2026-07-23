@@ -1,0 +1,72 @@
+/* CONTENT PAGE */
+.content-page{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* MESSAGGIO DI REGISTRAZIONE/LOGIN */
+#reg-msg, #login-msg{
+    display: none;
+    margin-top: 10px; 
+    font-weight: bold;
+}
+/* FORM DI AUTENTICAZIONE */
+.auth-form{
+    background-color: var(--background-header);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 600px;
+}
+.form-group,
+.submit-area{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 10px;
+    margin: 15px 0;
+}
+.form-group label{
+    color: var(--keyword-color);
+    font-weight: bold;
+}
+.form-group input,
+.form-group select{
+    width: 18rem;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.form-group input.not-valid{
+    background-color: var(--invalid-input);
+    border: 2px solid var(--invalid-input);
+}
+/* BOTTONI */
+button{
+    cursor: pointer;
+    background-color: var(--navbar-color);
+    color: whitesmoke;
+    padding: 5px;
+    max-width: 100px;
+}
+button:hover{
+    background-color: var(--keyword-color);
+    color: var(--background-header);
+}
+/* SEZIONE ACCEDI */
+.login-section a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.login-section a:hover{
+    color: var(--keyword-color);
+    text-decoration: underline;
+}
+/* RESPONSIVE DESIGN PER SCHERMI PIU' PICCOLI */
+@media screen and (max-width: 800px) {
+    .content-page {
+        grid-template-columns: 1fr; 
+        justify-items: center;
+    }
+    .auth-form {
+        max-width: 90%; 
+    }
+}

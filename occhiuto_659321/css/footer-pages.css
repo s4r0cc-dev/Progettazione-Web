@@ -1,0 +1,62 @@
+/* PARAGRAFO */
+.paragrafo{
+    padding: 5px;
+    text-align: justify;
+    color: whitesmoke;
+    font-size: 16px;
+}
+/* CONTENT PAGE */
+.content-page{
+    background-color: var(--background-header);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+.content-page img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+.content-page h3{
+    margin: 10px 0;
+    font-size: 18px;
+    border-bottom: 1px solid var(--navbar-color);
+}
+/* LISTA CONTATTI */
+.lista-contatti {
+    list-style-type: disc;
+    margin: 15px 0 15px 20px;
+    padding: 0;
+    font-size: 16px;
+    color: whitesmoke;
+}
+.lista-contatti li {
+    margin-bottom: 10px;
+}
+.lista-contatti a {
+    color: var(--keyword-color);
+    text-decoration: none;
+}
+.lista-contatti a:hover {
+    text-decoration: underline;
+}
+.nota-orari {
+    margin-top: 15px;
+}
+
+/* RESPONSIVE DESIGN PER SCHERMI PIU' PICCOLI */
+@media screen and (max-width: 800px) {
+    .content-page {
+        grid-template-columns: 1fr; 
+        justify-items: center;
+    }
+    .content-page img {
+        max-width: 90%; 
+    }
+}

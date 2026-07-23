@@ -1,0 +1,68 @@
+/* HOME */
+.back-home{
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    color: var(--background-header);
+    font-family: var(--font);
+    font-weight: bold;
+}
+.back-home a{
+    text-decoration: none;
+    color: var(--background-header);
+}
+.back-home a:hover{
+    color: var(--keyword-color);
+}
+/* HEADER E LOGO */
+header{
+    background-color: rgb(14, 14, 14);
+    width: 100%;
+    height: fit-content;
+}
+.logo{
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+    color: white;
+    font-family: var(--font-header);
+}
+/* BARRA DI NAVIGAZIONE */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-header);
+    padding: 10px 20px;
+    border: 1px solid var(--navbar-color);
+    border-radius: 10px;
+    width: fit-content;
+}
+.navbar > div{
+    color: whitesmoke;
+}
+nav{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav a{
+    text-decoration: none;
+    color: whitesmoke; 
+    white-space: nowrap;
+}
+nav a:hover{
+    color: var(--keyword-color);
+}
+nav input{
+    padding: 5px;
+}

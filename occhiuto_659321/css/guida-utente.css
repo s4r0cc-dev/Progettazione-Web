@@ -1,0 +1,17 @@
+/* GUIDA UTENTE */
+.guida-container{
+    margin: 20px;
+    background-color: var(--background-header);
+    max-width: 1200px;
+    border-radius: 10px;
+    color: whitesmoke;
+    padding: 20px 30px;
+}
+.guida-container h2{
+    border-bottom: 1px solid var(--navbar-color);
+    margin: 5px 0;
+}
+.guida-container p{
+    text-align: justify;
+}
+

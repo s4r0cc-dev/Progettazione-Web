@@ -1,0 +1,48 @@
+/* CONTAINER PREFERITI */
+.container-preferiti {
+    margin: 10px auto;
+}
+.container-preferiti img{
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+/* CARD FILM PREFERITO */
+.film-card{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-header);
+    border-radius: 10px;
+    padding: 10px;
+    align-items: flex-start;
+}
+.preferito-info{
+    padding: 0 10px;
+}
+.preferito-titolo{
+    color: whitesmoke;
+    font-size: 30px;
+    margin: 5px 0;
+    padding: 5px;
+}
+.preferito-genere,
+.preferito-durata,
+.preferito-trama,
+.preferito-stato{
+    color: whitesmoke;
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px 0;
+}
+.lista-preferiti {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+/* NESSUN PREFERITO */
+.empty-msg {
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 6px;
+}
