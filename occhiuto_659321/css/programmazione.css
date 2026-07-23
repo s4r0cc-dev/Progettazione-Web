@@ -15,7 +15,6 @@
     background-color: var(--background-header);
     border-radius: 10px;
     overflow: hidden;
-    transition: transform 0.2s ease;
     cursor: pointer;
     padding: 5px;
     border: 1px solid var(--navbar-color);
