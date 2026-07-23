@@ -35,10 +35,6 @@
     padding: 5px;
     box-sizing: border-box;
 }
-.form-group input.not-valid{
-    background-color: var(--invalid-input);
-    border: 2px solid var(--invalid-input);
-}
 /* BOTTONI */
 button{
     cursor: pointer;
